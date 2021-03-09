@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+:root {
+  --primary-color: #319795;
+}
+
+/*Avatar */
+.avatar-img {
+  border-radius: 50%;
+  width: 4%;
+  height: auto;
+}
+
+/* 
+Alerts  */
+.alert {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  border-radius: 3%;
+  font-size: large;
+}
+
+.alert-error {
+  padding: 1%;
+  background-color: rgb(254, 215, 215);
+}
+
+.alert-success {
+  padding: 1%;
+  background-color: #c6f6d5;
+}
+
+.alert-warning {
+  padding: 1%;
+  background-color: #feebc8;
+}
+
+.alert-info {
+  padding: 1%;
+  background-color: #bee3f8;
+}
+
+/* BADGES */
+
+.badge {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.5%;
+  border-radius: 8%;
+  font-weight: 600;
+}
+
+.badge-on-avatar {
+  background-color: var(--primary-color);
+  position: absolute;
+  height: 40%;
+  width: 1%;
+  border-radius: 50%;
+  left: 0;
+}
+
+.check {
+  position: relative;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.check-img {
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  background-color: var(--primary-color);
+  /* padding: 1px 4px; */
+  width: 5vw;
+  left: 35px;
+}
+
+/* button */
+
+.primary-button {
+  cursor: pointer;
+  padding: 0.7%;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8%;
+  font-weight: 600;
+}
+.primary-button:hover {
+  background-color: #124747;
+}
+
+.link-button {
+  text-decoration: none;
+}
