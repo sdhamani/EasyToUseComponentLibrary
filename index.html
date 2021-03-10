@@ -1,106 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Component Library</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1>Welcome to my component Library</h1>
-    <div>
-      <h2>1. Avatar</h2>
-      <img
-        class="avatar-img"
-        src="https://avatars3.githubusercontent.com/u/100200?s=460&v=4"
-      />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Component Library</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>Welcome to my component Library</h1>
+  <div>
+    <h2>1. Avatar</h2>
+    <img class="avatar-icon" src="Images/icons8_account_64px.png" />
+  </div>
+  <div>
+    <h2>2. Alerts</h2>
+    <div class="alert">
+      <h3 class="alert-error">
+        <i class="fa fa-exclamation-triangle" style="color: #f87171; padding-right: 1%" aria-hidden="true"></i>There was
+        an error processing your request
+      </h3>
+    </div>
+    <div class="alert">
+      <h3 class="alert-success">
+        <i class="fa fa-check-circle" style="color: #34d399; padding-right: 1%" aria-hidden="true"></i>Data uploaded to
+        the server. Fire on!
+      </h3>
+    </div>
+    <div class="alert">
+      <h3 class="alert-warning">
+        <i class="fa fa-exclamation-circle" style="color: #fbbf24; padding-right: 1%" aria-hidden="true"></i>Seems your
+        account is about expire, upgrade now
+      </h3>
+    </div>
+    <div class="alert">
+      <h3 class="alert-info">
+        <i class="fa fa-info-circle" style="color: #60a5fa; padding-right: 1%" aria-hidden="true"></i>Chakra is going
+        live on August 30th. Get ready!
+      </h3>
     </div>
     <div>
-      <h2>2. Alerts</h2>
-      <div class="alert">
-        <h3 class="alert-error">
-          <i
-            class="fa fa-exclamation-triangle"
-            style="color: #f87171; padding-right: 1%"
-            aria-hidden="true"
-          ></i
-          >There was an error processing your request
-        </h3>
-      </div>
-      <div class="alert">
-        <h3 class="alert-success">
-          <i
-            class="fa fa-check-circle"
-            style="color: #34d399; padding-right: 1%"
-            aria-hidden="true"
-          ></i
-          >Data uploaded to the server. Fire on!
-        </h3>
-      </div>
-      <div class="alert">
-        <h3 class="alert-warning">
-          <i
-            class="fa fa-exclamation-circle"
-            style="color: #fbbf24; padding-right: 1%"
-            aria-hidden="true"
-          ></i
-          >Seems your account is about expire, upgrade now
-        </h3>
-      </div>
-      <div class="alert">
-        <h3 class="alert-info">
-          <i
-            class="fa fa-info-circle"
-            style="color: #60a5fa; padding-right: 1%"
-            aria-hidden="true"
-          ></i
-          >Chakra is going live on August 30th. Get ready!
-        </h3>
-      </div>
-      <div>
-        <h2>3.Badges</h2>
-        <span class="badge">Default</span>
-        <span class="badge">Primary</span>
-      </div>
-    </div>
-
-    <div>
-        <h4>3.1 Badge on Icons</h4>
-        <div class="check">
-          <img
-            src="Images/icons8_shopping_cart_50px_1.png"
-          />
-          <span class="check-img">4</span>
-        </div>
-      </div>
-
-    <div>
-      <h4>3.2 Badge on Avatars</h4>
-      <div class="check">
-        <img
-          src="Images/icons8_account_64px.png"
-        />
-        <span class="check-img">4</span>
-      </div>
-    </div>
-
-    <h2>4. Buttons</h2>
-    <div>
-        <button class="primary-button">Primary Button</button>
-        <a class="link-button primary-button" href="https://www.notion.so/project-I-component-library-88985961d0664c12b348b1d7b40db0d5">Link</a>
-        <button class="primary-button"><i class="fas fa-shopping-cart"></i></i>Call us</button>
-        
+      <h2>3.Badges</h2>
+      <span class="badge">Default</span>
+      <span class="badge">Primary</span>
     </div>
   </div>
-  </body>
+
+  <div>
+    <h4>3.1 Badge on Icons</h4>
+    <div class="badge-div">
+      <img class="badge-icons" src="Images/icons8_shopping_cart_50px_1.png" />
+      <span class="badge-on-icon">4</span>
+    </div>
+  </div>
+
+  <div>
+    <h4>3.2 Badge on Avatars</h4>
+    <div class="badge-div">
+      <img class="badge-icons" src="Images/icons8_account_64px.png" />
+      <span class="badge-on-icon">4</span>
+    </div>
+  </div>
+
+  <h2>4. Buttons</h2>
+  <div>
+    <button class="primary-button">Primary Button</button>
+    <a class="link-button primary-button"
+      href="https://www.notion.so/project-I-component-library-88985961d0664c12b348b1d7b40db0d5">Link</a>
+    <button class="primary-button"><i class="fas fa-shopping-cart"></i></i>Call us</button>
+    <div class="floating-div"><button class="floating-button">+</button></div>
+  </div>
+  <h2>5. Cards</h2>
+
+  <h4>5.1 Cards with dismiss</h4>
+  <div class="cards">
+    <div class="dismiss-card">
+      <button class="card-dismiss-btn">x</button>
+      <img class="card-image"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAAG1BMVEXMzMyWlpbFxcWxsbG3t7ecnJyjo6O+vr6qqqqUhI1cAAABC0lEQVR4nO3U7YrDIBCFYccZP+7/itfRmES6+VfDLrwPlEo54HGSGgIAAAAAAAAAAAAAAAAAAAD+NWkflUZ9kZI9hc7UU+ibqu9Ys6qWEExUJT6EZuop9EXWzt++8nH63GZRfWrBN45i99BMXaFtYrFeq4zT+xAs9WWqbTpLaKZuoY3FfEfJItXXbccydjQxKUvoSN1Du2tpLEnHelRos/Gia62eWkJ7a7n2XJZBqNhnqKVenJYrsr42KeVfarXUa+9Wf6M1H3+y8ew0lWtcvdZM3UJ7a4WUrT+zfiWV8bOFmpbQTF2h3bVKlnFxnxe4V4rnuEatmXrjlgcAAAAAAAAAAAAAAAAAAH/cD4mjA82Or0YGAAAAAElFTkSuQmCC">
+      <div>
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
+          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+      </div>
+    </div>
+
+    <div class="dismiss-card">
+      <button class="card-dismiss-btn">x</button>
+      <img class="card-image"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAAG1BMVEXMzMyWlpbFxcWxsbG3t7ecnJyjo6O+vr6qqqqUhI1cAAABC0lEQVR4nO3U7YrDIBCFYccZP+7/itfRmES6+VfDLrwPlEo54HGSGgIAAAAAAAAAAAAAAAAAAAD+NWkflUZ9kZI9hc7UU+ibqu9Ys6qWEExUJT6EZuop9EXWzt++8nH63GZRfWrBN45i99BMXaFtYrFeq4zT+xAs9WWqbTpLaKZuoY3FfEfJItXXbccydjQxKUvoSN1Du2tpLEnHelRos/Gia62eWkJ7a7n2XJZBqNhnqKVenJYrsr42KeVfarXUa+9Wf6M1H3+y8ew0lWtcvdZM3UJ7a4WUrT+zfiWV8bOFmpbQTF2h3bVKlnFxnxe4V4rnuEatmXrjlgcAAAAAAAAAAAAAAAAAAH/cD4mjA82Or0YGAAAAAElFTkSuQmCC">
+      <div>
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
+          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+      </div>
+    </div>
+
+    <div class="dismiss-card">
+      <button class="card-dismiss-btn">x</button>
+      <img class="card-image"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAAG1BMVEXMzMyWlpbFxcWxsbG3t7ecnJyjo6O+vr6qqqqUhI1cAAABC0lEQVR4nO3U7YrDIBCFYccZP+7/itfRmES6+VfDLrwPlEo54HGSGgIAAAAAAAAAAAAAAAAAAAD+NWkflUZ9kZI9hc7UU+ibqu9Ys6qWEExUJT6EZuop9EXWzt++8nH63GZRfWrBN45i99BMXaFtYrFeq4zT+xAs9WWqbTpLaKZuoY3FfEfJItXXbccydjQxKUvoSN1Du2tpLEnHelRos/Gia62eWkJ7a7n2XJZBqNhnqKVenJYrsr42KeVfarXUa+9Wf6M1H3+y8ew0lWtcvdZM3UJ7a4WUrT+zfiWV8bOFmpbQTF2h3bVKlnFxnxe4V4rnuEatmXrjlgcAAAAAAAAAAAAAAAAAAH/cD4mjA82Or0YGAAAAAElFTkSuQmCC">
+      <div>
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
+          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+      </div>
+    </div>
+
+  </div>
+  <h4>5.2 Cards with text overlay</h4>
+
+  <div class="text-overlay-card">
+    <img class="text-overlay-image"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAAG1BMVEXMzMyWlpbFxcWxsbG3t7ecnJyjo6O+vr6qqqqUhI1cAAABC0lEQVR4nO3U7YrDIBCFYccZP+7/itfRmES6+VfDLrwPlEo54HGSGgIAAAAAAAAAAAAAAAAAAAD+NWkflUZ9kZI9hc7UU+ibqu9Ys6qWEExUJT6EZuop9EXWzt++8nH63GZRfWrBN45i99BMXaFtYrFeq4zT+xAs9WWqbTpLaKZuoY3FfEfJItXXbccydjQxKUvoSN1Du2tpLEnHelRos/Gia62eWkJ7a7n2XJZBqNhnqKVenJYrsr42KeVfarXUa+9Wf6M1H3+y8ew0lWtcvdZM3UJ7a4WUrT+zfiWV8bOFmpbQTF2h3bVKlnFxnxe4V4rnuEatmXrjlgcAAAAAAAAAAAAAAAAAAH/cD4mjA82Or0YGAAAAAElFTkSuQmCC">
+    <p class="text-overlay-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+  </div>
+  </div>
+
+  <h4>5.3 Horizontal Card</h4>
+
+  <div class="horizontal-card">
+    <img class="horizontal-card-image"
+      src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q">
+    <div class="horizontal-data">
+      <h2 class="horizontal-card-heading">Sagar Dhamani</h3>
+        <small>Sagar Dhamani is a web developer at Infosys </small>
+      </h2>
+      <div>
+        <button class="horizontal-card-btn">
+          <a style="text-decoration:none; color:white" href="linkedin.com/in/sagar-dhamani-a8b066114"><small
+              style="font-size:1.3vw">LinkedIn</small></a></button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div>
+    <h2>6.1 Responsive Image</h2>
+    <div >
+      <img class="responsive-img"
+        src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
+    </div>
+    <h2>6.2 Round Responsive Image</h2>
+    <div>
+      <img class="round-responsive-img"
+        src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>

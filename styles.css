@@ -2,17 +2,20 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   text-align: center;
+  /* font-size: 1.8vw; */
 }
 
 :root {
   --primary-color: #319795;
+  --secondary-color: #124747;
+  --button-text-color: white;
 }
 
 /*Avatar */
-.avatar-img {
+.avatar-icon {
   border-radius: 50%;
-  width: 4%;
-  height: auto;
+  width: 5%;
+  /* height: auto; */
 }
 
 /* 
@@ -48,52 +51,199 @@ Alerts  */
 /* BADGES */
 
 .badge {
-  color: white;
+  color: var(--button-text-color);
   background-color: var(--primary-color);
   padding: 0.5%;
   border-radius: 8%;
   font-weight: 600;
 }
 
-.badge-on-avatar {
-  background-color: var(--primary-color);
-  position: absolute;
-  height: 40%;
-  width: 1%;
-  border-radius: 50%;
-  left: 0;
-}
-
-.check {
+.badge-div {
   position: relative;
   border-radius: 2px;
   display: inline-block;
 }
 
-.check-img {
+.badge-on-icon {
   border-radius: 50%;
   position: absolute;
-  top: -10px;
+  top: -5px;
   background-color: var(--primary-color);
-  /* padding: 1px 4px; */
-  width: 5vw;
-  left: 35px;
+  left: 38px;
+  font-size: 50%;
+  padding: 1px 1px;
+  color: var(--button-text-color);
+  justify-content: center;
 }
 
+.badge-icons {
+  width: 70%;
+  height: auto;
+}
 /* button */
 
 .primary-button {
   cursor: pointer;
   padding: 0.7%;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--button-text-color);
   border-radius: 8%;
   font-weight: 600;
 }
 .primary-button:hover {
-  background-color: #124747;
+  background-color: var(--secondary-color);
 }
 
 .link-button {
   text-decoration: none;
+}
+
+.floating-button {
+  border-style: solid;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+.floating-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.floating-div {
+  border-radius: 100%;
+  width: 4%;
+  height: 7%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1;
+}
+
+/* //Cards */
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dismiss-card {
+  box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%);
+  width: 30%;
+  height: 40%;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 2%;
+}
+
+.dismiss-card:hover {
+  box-shadow: 0 0 0 4px hsla(0, 0%, 80%), 0 0 0 6px hsla(0, 0%, 75%);
+}
+
+.card-image {
+  padding-top: 20px;
+  width: 80%;
+  height: 40%;
+  margin: auto;
+}
+
+.card-dismiss-btn {
+  border-style: solid;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 100%;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.card-dismiss-btn:hover {
+  padding: 10px 15px;
+}
+
+.text-overlay-card {
+  box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%);
+  width: 30%;
+  height: 40%;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 2%;
+  margin: auto;
+}
+.text-overlay-image {
+  position: relative;
+}
+.text-overlay-data {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+/* //Horizontal Card */
+
+.horizontal-card {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  background-color: var(--button-text-color);
+  /* color: var(--button-text-color); */
+  box-shadow: 0 0 0 4px hsla(0, 0%, 80%), 0 0 0 6px hsla(0, 0%, 75%);
+  border-radius: 0.2%;
+  font-size: 1.5vw;
+}
+.horizontal-card-btn {
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--button-text-color);
+  margin-top: 10px;
+  width: 40%;
+  height: 8%;
+}
+
+.horizontal-card-heading {
+  margin-top: 1px;
+  margin-bottom: 6px;
+}
+
+.horizontal-data {
+  padding-top: 3%;
+  text-align: center;
+  margin: auto;
+}
+
+.horizontal-card-image {
+  width: 30%;
+  height: 20%;
+}
+
+/* //responsive-img */
+
+.responsive-img {
+  margin: auto;
+  width: 40%;
+  height: 20%;
+}
+
+.round-responsive-img {
+  margin: auto;
+  width: 20%;
+  height: auto;
+  border-radius: 100%;
 }
