@@ -237,7 +237,7 @@ Alerts  */
 
 .responsive-img {
   margin: auto;
-  width: 40%;
+  width: 20%;
   height: 20%;
 }
 
@@ -246,4 +246,29 @@ Alerts  */
   width: 20%;
   height: auto;
   border-radius: 100%;
+}
+
+.input-outer-div {
+  border-width: 1px;
+  border-style: groove;
+  width: 60%;
+  margin: auto;
+  border: 2px groove;
+  border-radius: 7%;
+  padding-left: 0;
+  padding: 0.5%;
+}
+
+.input-div {
+  border-width: 1px;
+  border-style: groove;
+  border: 2px groove;
+  border-radius: 7%;
+  width: 99%;
+  padding: 1%;
+}
+
+.input-div:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
 }
