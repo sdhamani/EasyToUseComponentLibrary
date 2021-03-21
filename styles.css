@@ -131,55 +131,54 @@ Alerts  */
 }
 
 .dismiss-card {
-  box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%);
-  width: 30%;
-  height: 40%;
+  /* box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%); */
+  width: 25%;
+  /* height: 30%; */
   background-color: var(--primary-color);
   color: var(--button-text-color);
+  /* color: black; */
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 2%;
+  box-shadow: 2px 2px #888888;
 }
 
-.dismiss-card:hover {
+/* .dismiss-card:hover {
   box-shadow: 0 0 0 4px hsla(0, 0%, 80%), 0 0 0 6px hsla(0, 0%, 75%);
   /* transform: translateZ(1);
   opacity: 0.5; */
-  /* z-index: 2; */
-}
+/* z-index: 2; */
+/* box-shadow: 5px 10px #888888;
+} */
 
 .card-image {
-  padding-top: 20px;
-  width: 80%;
-  height: 40%;
+  width: 100%;
+  height: auto;
   margin: auto;
 }
 
 .card-dismiss-btn {
-  border-style: solid;
+  border-style: none;
   outline: 0;
   cursor: pointer;
   border-radius: 100%;
   position: absolute;
-  right: -12px;
-  top: -12px;
-  background-color: var(--primary-color);
-  color: #fff;
-  font-size: 10px;
+  right: -3%;
+  top: -2%;
+  background-color: white;
+  color: black;
+  font-size: 80%;
   font-weight: 700;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
 }
 
 .card-dismiss-btn:hover {
   padding: 10px 15px;
-  /* max-width: 25px;
-  opacity: 1; */
-  /* z-index: 2; */
 }
 
 .text-overlay-card {
-  box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%);
+  /* box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%); */
+  box-shadow: 2px 2px #888888;
   width: 30%;
   height: 40%;
   background-color: var(--primary-color);
@@ -190,16 +189,16 @@ Alerts  */
   border-radius: 2%;
   margin: auto;
 }
+
 .text-overlay-image {
   position: relative;
 }
+
 .text-overlay-data {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  margin-bottom: 0;
+  bottom: 0.5%;
+  color: white;
+  background-color: var(--primary-color);
 }
 
 /* //Horizontal Card */
@@ -285,6 +284,7 @@ Alerts  */
 input:optional {
   border-color: gray;
 }
+
 input:required:valid {
   border-color: var(--primary-color);
 }
