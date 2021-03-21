@@ -2,13 +2,102 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   text-align: center;
+
   /* font-size: 1.8vw; */
 }
-
+body {
+  margin: 0px;
+}
 :root {
   --primary-color: #319795;
   --secondary-color: #124747;
   --button-text-color: white;
+}
+
+/* Ham */
+
+.header {
+  grid-area: header;
+  /* align-items: left; */
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+  font-size: xx-large;
+  /* color: var(--primary-color); */
+  height: 55px;
+}
+.menu {
+  grid-area: menu;
+}
+.content {
+  grid-area: main;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "menu main main main main main";
+}
+.menu-list {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+.menu-list-item {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+}
+/* Navigation Bar */
+
+.navigation {
+  grid-area: header;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.navigation .nav-brand {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  color: var(--button-text-color);
+}
+
+.navigation .link {
+  color: var(--button-text-color);
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .link-active {
+  font-weight: d;
+}
+
+/* .list-no-bullets {
+  list-style: none;
+  padding-inline-start: 0px;
+} */
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 1 rem;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.link-active {
+  font-weight: bold;
 }
 
 /*Avatar */
@@ -127,20 +216,19 @@ Alerts  */
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.dismiss-card {
+.card {
   /* box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%); */
-  width: 25%;
-  /* height: 30%; */
+  max-width: 330px;
+  height: 450px;
   background-color: var(--primary-color);
   color: var(--button-text-color);
-  /* color: black; */
-  display: flex;
-  flex-direction: column;
   position: relative;
   box-shadow: 2px 2px #888888;
+  margin: 5px;
 }
 
 /* .dismiss-card:hover {
@@ -180,7 +268,7 @@ Alerts  */
   /* box-shadow: 0 0 0 2px hsla(0, 0%, 80%), 0 0 0 4px hsla(0, 0%, 75%); */
   box-shadow: 2px 2px #888888;
   width: 30%;
-  height: 40%;
+  height: 80%;
   background-color: var(--primary-color);
   color: var(--button-text-color);
   display: flex;

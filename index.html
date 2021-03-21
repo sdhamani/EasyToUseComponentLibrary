@@ -13,13 +13,41 @@
 </head>
 
 <body>
-  <h1>Welcome to my component Library</h1>
+  <div class="grid-container">
+  <div class="menu">
+    <ul class="menu-list">
+       <li class="menu-list-item">Avatar</li>
+       <li class="menu-list-item">Alerts</li>
+       <li class="menu-list-item">Badges</li>
+       <li class="menu-list-item">Buttons</li>
+       <li class="menu-list-item">Cards</li>
+       <li class="menu-list-item">Images</li>
+    </ul>
+  </div>
+  <!-- <nav class="navigation">
+    <h1 class="nav-brand">Component Library</h1>
+    <ul class="list-no-bullets nav-pills">
+        <li class="list-item-inline">
+            <a class="link link-active" href="/">Home</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href=""></a>
+        </li>
+        <li class="list-item-inline">
+           <a class="link" href=""></a>
+        </li>
+    </ul>
+  </nav> -->
+  <header class="header">
+    Easy To Use UI
+  </header>
+  <div class="content">
   <div>
-    <h2>1. Avatar</h2>
-    <img class="avatar-icon" src="Images/icons8_account_64px.png" />
+    <h2>Avatar</h2>
+    <img class="avatar-icon" src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
   </div>
   <div>
-    <h2>2. Alerts</h2>
+    <h2>Alerts</h2>
     <div class="alert">
       <h3 class="alert-error">
         <i class="fa fa-exclamation-triangle" style="color: #f87171; padding-right: 1%" aria-hidden="true"></i>There was
@@ -45,14 +73,14 @@
       </h3>
     </div>
     <div>
-      <h2>3.Badges</h2>
+      <h2>Badges</h2>
       <span class="badge">Default</span>
       <span class="badge">Primary</span>
     </div>
   </div>
 
   <div>
-    <h4>3.1 Badge on Icons</h4>
+    <h4>Badge on Icons</h4>
     <div class="badge-div">
       <img class="badge-icons" src="Images/icons8_shopping_cart_50px_1.png" />
       <span class="badge-on-icon">4</span>
@@ -60,14 +88,14 @@
   </div>
 
   <div>
-    <h4>3.2 Badge on Avatars</h4>
+    <h4>Badge on Avatars</h4>
     <div class="badge-div">
       <img class="badge-icons" src="Images/icons8_account_64px.png" />
       <span class="badge-on-icon">4</span>
     </div>
   </div>
 
-  <h2>4. Buttons</h2>
+  <h2>Buttons</h2>
   <div>
     <button class="primary-button">Primary Button</button>
     <a class="link-button primary-button"
@@ -75,11 +103,57 @@
     <button class="primary-button"><i class="fas fa-shopping-cart"></i></i>Call us</button>
     <div class="floating-div"><button class="floating-button">+</button></div>
   </div>
-  <h2>5. Cards</h2>
+  <h2>Cards</h2>
 
-  <h4>5.1 Cards with dismiss</h4>
   <div class="cards">
-    <div class="dismiss-card">
+    <div class="card">
+      <img class="card-image"
+        src="https://picsum.photos/id/237/536/354">
+      <div>
+        <h3>Card Title</h3>
+        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
+          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+      </div>
+    </div>
+       <div class="card">
+      <img class="card-image"
+        src="https://picsum.photos/id/237/536/354">
+      <div>
+        <h3>Card Title</h3>
+        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
+          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-image"
+        src="https://picsum.photos/id/237/536/354">
+      <div>
+        <h3>Card Title</h3>
+        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
+          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-image"
+        src="https://picsum.photos/id/237/536/354">
+      <div>
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
+          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+      </div>
+    </div>
+    
+    
+  </div>
+
+  
+  <h4>Cards with dismiss</h4>
+  <div class="cards">
+    <div class="card">
       <button class="card-dismiss-btn">x</button>
       <img class="card-image"
         src="https://picsum.photos/id/237/536/354">
@@ -91,7 +165,7 @@
       </div>
     </div>
 
-    <div class="dismiss-card">
+    <div class="card">
       <button class="card-dismiss-btn">x</button>
       <img class="card-image"
         src="https://picsum.photos/id/237/536/354">
@@ -103,7 +177,7 @@
       </div>
     </div>
 
-    <div class="dismiss-card">
+    <div class="card">
       <button class="card-dismiss-btn">x</button>
       <img class="card-image"
         src="https://picsum.photos/id/237/536/354">
@@ -116,16 +190,18 @@
     </div>
 
   </div>
-  <h4>5.2 Cards with text overlay</h4>
+  <h4>Cards with text overlay</h4>
 
+  <div>
   <div class="text-overlay-card">
     <img class="text-overlay-image"
       src="https://picsum.photos/id/237/536/354">
       <p class="text-overlay-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
   </div>
-  </div>
+</div>
+  
 
-  <h4>5.3 Horizontal Card</h4>
+  <h4>Horizontal Card</h4>
 
   <div class="horizontal-card">
     <img class="horizontal-card-image"
@@ -145,12 +221,12 @@
   </div>
   <h2>Images</h2>
   <div>
-    <h2>6.1 Responsive Image</h2>
+    <h2>Responsive Image</h2>
     <div>
       <img class="responsive-img"
         src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
     </div>
-    <h2>6.2 Round Responsive Image</h2>
+    <h2>Round Responsive Image</h2>
     <div>
       <img class="round-responsive-img"
         src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
@@ -166,8 +242,9 @@
     </div>
   </div>
   <h2>List</h2>
-
   </div>
+</div>
+</div>
 </body>
 
 </html>
