@@ -1,250 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Library</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Component Library</title>
-  <link href="styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="grid-container">
-  <div class="menu">
-    <ul class="menu-list">
-       <li class="menu-list-item">Avatar</li>
-       <li class="menu-list-item">Alerts</li>
-       <li class="menu-list-item">Badges</li>
-       <li class="menu-list-item">Buttons</li>
-       <li class="menu-list-item">Cards</li>
-       <li class="menu-list-item">Images</li>
-    </ul>
-  </div>
-  <!-- <nav class="navigation">
-    <h1 class="nav-brand">Component Library</h1>
-    <ul class="list-no-bullets nav-pills">
-        <li class="list-item-inline">
+  <body>
+    <div>
+      <nav class="navigation">
+        <!-- <h1 class="nav-brand">Component Library</h1> -->
+        <ul class="list-no-bullets nav-pills">
+          <li class="list-item-inline">
             <a class="link link-active" href="/">Home</a>
-        </li>
-        <li class="list-item-inline">
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="/components.html">Components</a>
+          </li>
+          <li class="list-item-inline">
             <a class="link" href=""></a>
-        </li>
-        <li class="list-item-inline">
-           <a class="link" href=""></a>
-        </li>
-    </ul>
-  </nav> -->
-  <header class="header">
-    Easy To Use UI
-  </header>
-  <div class="content">
-  <div>
-    <h2>Avatar</h2>
-    <img class="avatar-icon" src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
-  </div>
-  <div>
-    <h2>Alerts</h2>
-    <div class="alert">
-      <h3 class="alert-error">
-        <i class="fa fa-exclamation-triangle" style="color: #f87171; padding-right: 1%" aria-hidden="true"></i>There was
-        an error processing your request
-      </h3>
-    </div>
-    <div class="alert">
-      <h3 class="alert-success">
-        <i class="fa fa-check-circle" style="color: #34d399; padding-right: 1%" aria-hidden="true"></i>Data uploaded to
-        the server. Fire on!
-      </h3>
-    </div>
-    <div class="alert">
-      <h3 class="alert-warning">
-        <i class="fa fa-exclamation-circle" style="color: #fbbf24; padding-right: 1%" aria-hidden="true"></i>Seems your
-        account is about expire, upgrade now
-      </h3>
-    </div>
-    <div class="alert">
-      <h3 class="alert-info">
-        <i class="fa fa-info-circle" style="color: #60a5fa; padding-right: 1%" aria-hidden="true"></i>Chakra is going
-        live on August 30th. Get ready!
-      </h3>
-    </div>
-    <div>
-      <h2>Badges</h2>
-      <span class="badge">Default</span>
-      <span class="badge">Primary</span>
-    </div>
-  </div>
-
-  <div>
-    <h4>Badge on Icons</h4>
-    <div class="badge-div">
-      <img class="badge-icons" src="Images/icons8_shopping_cart_50px_1.png" />
-      <span class="badge-on-icon">4</span>
-    </div>
-  </div>
-
-  <div>
-    <h4>Badge on Avatars</h4>
-    <div class="badge-div">
-      <img class="badge-icons" src="Images/icons8_account_64px.png" />
-      <span class="badge-on-icon">4</span>
-    </div>
-  </div>
-
-  <h2>Buttons</h2>
-  <div>
-    <button class="primary-button">Primary Button</button>
-    <a class="link-button primary-button"
-      href="https://www.notion.so/project-I-component-library-88985961d0664c12b348b1d7b40db0d5">Link</a>
-    <button class="primary-button"><i class="fas fa-shopping-cart"></i></i>Call us</button>
-    <div class="floating-div"><button class="floating-button">+</button></div>
-  </div>
-  <h2>Cards</h2>
-
-  <div class="cards">
-    <div class="card">
-      <img class="card-image"
-        src="https://picsum.photos/id/237/536/354">
-      <div>
-        <h3>Card Title</h3>
-        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-          exercitationem neque quasi quisquam asperiores dignissimos?</p>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-content">
+        <div>
+          <!-- <h1 class="main-logo">UI</h1> -->
+          <img class="main-logo" src="data:image/png;base64,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" atl="logo" />
+        </div>
+        <div>
+        <!-- <div class="main-content-heading"> SERENE - UI</div> -->
+        <p class="main-content-text">Components for faster and easier web development. Build your own design system, or start with Material Design.</p>
+        <button class="getting-started">GET STARTED</button>
+      </div>
       </div>
     </div>
-       <div class="card">
-      <img class="card-image"
-        src="https://picsum.photos/id/237/536/354">
-      <div>
-        <h3>Card Title</h3>
-        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-          exercitationem neque quasi quisquam asperiores dignissimos?</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-image"
-        src="https://picsum.photos/id/237/536/354">
-      <div>
-        <h3>Card Title</h3>
-        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-          exercitationem neque quasi quisquam asperiores dignissimos?</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-image"
-        src="https://picsum.photos/id/237/536/354">
-      <div>
-        <h3 class="card-title">Card Title</h3>
-        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-          exercitationem neque quasi quisquam asperiores dignissimos?</p>
-      </div>
-    </div>
-    
-    
+    </body>
   </div>
-
-  
-  <h4>Cards with dismiss</h4>
-  <div class="cards">
-    <div class="card">
-      <button class="card-dismiss-btn">x</button>
-      <img class="card-image"
-        src="https://picsum.photos/id/237/536/354">
-      <div>
-        <h3 class="card-title">Card Title</h3>
-        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-          exercitationem neque quasi quisquam asperiores dignissimos?</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <button class="card-dismiss-btn">x</button>
-      <img class="card-image"
-        src="https://picsum.photos/id/237/536/354">
-      <div>
-        <h3 class="card-title">Card Title</h3>
-        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-          exercitationem neque quasi quisquam asperiores dignissimos?</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <button class="card-dismiss-btn">x</button>
-      <img class="card-image"
-        src="https://picsum.photos/id/237/536/354">
-      <div>
-        <h3 class="card-title">Card Title</h3>
-        <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-          voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-          exercitationem neque quasi quisquam asperiores dignissimos?</p>
-      </div>
-    </div>
-
-  </div>
-  <h4>Cards with text overlay</h4>
-
-  <div>
-  <div class="text-overlay-card">
-    <img class="text-overlay-image"
-      src="https://picsum.photos/id/237/536/354">
-      <p class="text-overlay-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-  </div>
-</div>
-  
-
-  <h4>Horizontal Card</h4>
-
-  <div class="horizontal-card">
-    <img class="horizontal-card-image"
-      src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q">
-    <div class="horizontal-data">
-      <h2 class="horizontal-card-heading">Sagar Dhamani</h3>
-        <small>Sagar Dhamani is a web developer at Infosys </small>
-      </h2>
-      <div>
-        <button class="horizontal-card-btn">
-          <a style="text-decoration:none; color:white" href="linkedin.com/in/sagar-dhamani-a8b066114"><small
-              style="font-size:1.3vw">LinkedIn</small></a></button>
-      </div>
-    </div>
-
-
-  </div>
-  <h2>Images</h2>
-  <div>
-    <h2>Responsive Image</h2>
-    <div>
-      <img class="responsive-img"
-        src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
-    </div>
-    <h2>Round Responsive Image</h2>
-    <div>
-      <img class="round-responsive-img"
-        src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
-    </div>
-  </div>
-  <h2>Inputs</h2>
-  <div>
-    <div class="input-outer-div">
-      <input class="input-div" placeholder="Enter Email Id" type="email" required > 
-    </div>
-    <div class="input-outer-div">
-      <input class="input-div" placeholder="Enter Password" type="password" required>
-    </div>
-  </div>
-  <h2>List</h2>
-  </div>
-</div>
-</div>
-</body>
-
+  </body>
 </html>

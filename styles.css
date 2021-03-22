@@ -16,16 +16,17 @@ body {
 
 /* Ham */
 
-.header {
+/* .header {
   grid-area: header;
-  /* align-items: left; */
+  align-items: left;
   text-align: left;
   padding: 5px;
   margin: 5px;
   font-size: xx-large;
-  /* color: var(--primary-color); */
+  color: var(--primary-color);
   height: 55px;
-}
+} */
+
 .menu {
   grid-area: menu;
 }
@@ -58,8 +59,9 @@ body {
   grid-area: header;
   background-color: var(--primary-color);
   text-align: center;
-  padding: 1rem;
   border-bottom-right-radius: 1rem;
+  margin: 0px;
+  padding: 10px;
 }
 
 .navigation .nav-brand {
@@ -100,6 +102,26 @@ body {
   font-weight: bold;
 }
 
+/* Main-content */
+
+.main-content {
+  margin: auto;
+  width: 60%;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  display: flex;
+}
+
+.main-logo {
+  color: var(--primary-color);
+  font-size: 8rem;
+}
+
+.main-content-heading {
+  font-size: xx-large;
+  font-weight: 700;
+}
 /*Avatar */
 .avatar-icon {
   border-radius: 50%;
