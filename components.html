@@ -1,204 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Components</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="grid-container">
-        <div class="menu">
-          <ul class="menu-list">
-             <li class="menu-list-item">Avatar</li>
-             <li class="menu-list-item">Alerts</li>
-             <li class="menu-list-item">Badges</li>
-             <li class="menu-list-item">Buttons</li>
-             <li class="menu-list-item">Cards</li>
-             <li class="menu-list-item">Images</li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Components</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+ 
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="menu">
+      <div class="menu-heading">Getting Started</div>
+      <ul class="menu-list">
+        <li class="menu-list-item" id="installation">Installation</li>
+      </ul>
+      <div class="menu-heading">Components</div>
+      <ul class="menu-list">
+        <li class="menu-list-item" id="avatars">Avatar</li>
+        <li class="menu-list-item" id="alerts">Alerts</li>
+        <li class="menu-list-item" id="badges">Badges</li>
+        <li class="menu-list-item" id="buttons">Buttons</li>
+        <li class="menu-list-item" id="cards">Cards</li>
+        <li class="menu-list-item" id="images">Images</li>
+        <li class="menu-list-item" id="inputs">Inputs</li>
+      </ul>
+    </div>
+    <nav class="navigation">
+      <!-- <h1 class="nav-brand">Component Library</h1> -->
+      <ul class="list-no-bullets nav-pills">
+        <li class="list-item-inline">
+          <a class="link " href="/">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/components.html">Components</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href=""></a>
+        </li>
+      </ul>
+    </nav>
+    <hr class="vl" width="2" size="500">
+    <div class="content">
+      <div class="installation">
+        <h1 class="installation-heading">Installation</h1>
+        <p class="installation-text">To use SERENE's CSS Components just import the CSS FIle.</p>
+        <iframe class="iframes"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520%2522https%253A%252F%252Fserene-ui.netlify.app%252F%252Fstyles.css%2522%253B"
+          style="width: 700px; height: 92px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+      <h2 class="components-heading">Avatar</h2>
+
+      <div class="avatars">
+        <img class="avatar-xxl" src="./Images/profile-photo.jpg" />
+        <img class="avatar-xl" src="./Images/profile-photo.jpg" />
+        <img class="avatar-l" src="./Images/profile-photo.jpg" />
+      </div>
+
+      <iframe class="iframes"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2509%253Cdiv%2520class%253D%2522avatars%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-xxl%2522%2520src%253D%2522.%252FImages%252Fprofile-photo.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-xl%2522%2520src%253D%2522.%252FImages%252Fprofile-photo.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-l%2522%2520src%253D%2522.%252FImages%252Fprofile-photo.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 700px; height: 164px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <h2 class="components-heading">Alerts</h2>
+      <div>
+        <div class="alert">
+          <h3 class="alert-error">
+            <i class="fa fa-exclamation-triangle" style="color: #f87171; padding-right: 1%" aria-hidden="true">
+            </i>There was an error processing your request
+          </h3>
         </div>
-        <nav class="navigation">
-          <h1 class="nav-brand">Component Library</h1>
-          <ul class="list-no-bullets nav-pills">
-              <li class="list-item-inline">
-                  <a class="link " href="/">Home</a>
-              </li>
-              <li class="list-item-inline">
-                <a class="link link-active" href="/components.html">Components</a>
-              </li>
-              <li class="list-item-inline">
-                 <a class="link" href=""></a>
-              </li>
-          </ul>
-        </nav>
-      
-        <div class="content">
-        <div>
-          <h2>Avatar</h2>
-          <img class="avatar-icon" src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
+        <div class="alert">
+          <h3 class="alert-success">
+            <i class="fa fa-check-circle" style="color: #34d399; padding-right: 1%" aria-hidden="true"></i>Data uploaded
+            to
+            the server. Fire on!
+          </h3>
         </div>
-        <div>
-          <h2>Alerts</h2>
-          <div class="alert">
-            <h3 class="alert-error">
-              <i class="fa fa-exclamation-triangle" style="color: #f87171; padding-right: 1%" aria-hidden="true"></i>There was
-              an error processing your request
-            </h3>
-          </div>
-          <div class="alert">
-            <h3 class="alert-success">
-              <i class="fa fa-check-circle" style="color: #34d399; padding-right: 1%" aria-hidden="true"></i>Data uploaded to
-              the server. Fire on!
-            </h3>
-          </div>
-          <div class="alert">
-            <h3 class="alert-warning">
-              <i class="fa fa-exclamation-circle" style="color: #fbbf24; padding-right: 1%" aria-hidden="true"></i>Seems your
-              account is about expire, upgrade now
-            </h3>
-          </div>
-          <div class="alert">
-            <h3 class="alert-info">
-              <i class="fa fa-info-circle" style="color: #60a5fa; padding-right: 1%" aria-hidden="true"></i>Chakra is going
-              live on August 30th. Get ready!
-            </h3>
-          </div>
-          <div>
-            <h2>Badges</h2>
-            <span class="badge">Default</span>
-            <span class="badge">Primary</span>
-          </div>
+        <div class="alert">
+          <h3 class="alert-warning">
+            <i class="fa fa-exclamation-circle" style="color: #fbbf24; padding-right: 1%" aria-hidden="true"></i>Seems
+            your
+            account is about expire, upgrade now
+          </h3>
         </div>
-      
-        <div>
-          <h4>Badge on Icons</h4>
-          <div class="badge-div">
-            <img class="badge-icons" src="Images/icons8_shopping_cart_50px_1.png" />
-            <span class="badge-on-icon">4</span>
-          </div>
-        </div>
-      
-        <div>
-          <h4>Badge on Avatars</h4>
-          <div class="badge-div">
-            <img class="badge-icons" src="Images/icons8_account_64px.png" />
-            <span class="badge-on-icon">4</span>
-          </div>
-        </div>
-      
-        <h2>Buttons</h2>
-        <div>
-          <button class="primary-button">Primary Button</button>
-          <a class="link-button primary-button"
-            href="https://www.notion.so/project-I-component-library-88985961d0664c12b348b1d7b40db0d5">Link</a>
-          <button class="primary-button"><i class="fas fa-shopping-cart"></i></i>Call us</button>
-          <div class="floating-div"><button class="floating-button">+</button></div>
-        </div>
-        <h2>Cards</h2>
-      
-        <div class="cards">
-          <div class="card">
-            <img class="card-image"
-              src="https://picsum.photos/id/237/536/354">
-            <div>
-              <h3>Card Title</h3>
-              <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-                voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-                exercitationem neque quasi quisquam asperiores dignissimos?</p>
-            </div>
-          </div>
-             <div class="card">
-            <img class="card-image"
-              src="https://picsum.photos/id/237/536/354">
-            <div>
-              <h3>Card Title</h3>
-              <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-                voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-                exercitationem neque quasi quisquam asperiores dignissimos?</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-image"
-              src="https://picsum.photos/id/237/536/354">
-            <div>
-              <h3>Card Title</h3>
-              <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-                voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-                exercitationem neque quasi quisquam asperiores dignissimos?</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-image"
-              src="https://picsum.photos/id/237/536/354">
-            <div>
-              <h3 class="card-title">Card Title</h3>
-              <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-                voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-                exercitationem neque quasi quisquam asperiores dignissimos?</p>
-            </div>
-          </div>
-          
-          
-        </div>
-      
-        
-        <h4>Cards with dismiss</h4>
-        <div class="cards">
-          <div class="card">
-            <button class="card-dismiss-btn">x</button>
-            <img class="card-image"
-              src="https://picsum.photos/id/237/536/354">
-            <div>
-              <h3 class="card-title">Card Title</h3>
-              <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-                voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-                exercitationem neque quasi quisquam asperiores dignissimos?</p>
-            </div>
-          </div>
-      
-          <div class="card">
-            <button class="card-dismiss-btn">x</button>
-            <img class="card-image"
-              src="https://picsum.photos/id/237/536/354">
-            <div>
-              <h3 class="card-title">Card Title</h3>
-              <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-                voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-                exercitationem neque quasi quisquam asperiores dignissimos?</p>
-            </div>
-          </div>
-      
-          <div class="card">
-            <button class="card-dismiss-btn">x</button>
-            <img class="card-image"
-              src="https://picsum.photos/id/237/536/354">
-            <div>
-              <h3 class="card-title">Card Title</h3>
-              <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat placeat
-                voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
-                exercitationem neque quasi quisquam asperiores dignissimos?</p>
-            </div>
-          </div>
-      
-        </div>
-        <h4>Cards with text overlay</h4>
-      
-        <div>
-        <div class="text-overlay-card">
-          <img class="text-overlay-image"
-            src="https://picsum.photos/id/237/536/354">
-            <p class="text-overlay-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        <div class="alert">
+          <h3 class="alert-info">
+            <i class="fa fa-info-circle" style="color: #60a5fa; padding-right: 1%" aria-hidden="true"></i>Chakra is
+            going
+            live on August 30th. Get ready!
+          </h3>
         </div>
       </div>
-        
-      
-        <h4>Horizontal Card</h4>
-      
+
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520%2523f87171%253B%2520padding-right%253A%25201%2525%2522%2520aria-hidden%253D%2522true%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fi%253EThere%2520was%2520an%2520error%2520processing%2520your%2520request%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-check-circle%2522%2520style%253D%2522color%253A%2520%252334d399%253B%2520padding-right%253A%25201%2525%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EData%2520uploaded%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520to%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520the%2520server.%2520Fire%2520on%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%2520style%253D%2522color%253A%2520%2523fbbf24%253B%2520padding-right%253A%25201%2525%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253ESeems%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520your%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520account%2520is%2520about%2520expire%252C%2520upgrade%2520now%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%2520style%253D%2522color%253A%2520%252360a5fa%253B%2520padding-right%253A%25201%2525%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EChakra%2520is%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520going%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520live%2520on%2520August%252030th.%2520Get%2520ready%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 710px; height: 214px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+
+      <h2 class="components-heading">Badges</h2>
+
+      <div>
+        <div class="badges">
+          <span class="badge">Default</span>
+          <span class="badge">Primary</span>
+        </div>
+
+        <iframe class="iframes"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253EDefault%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253EPrimary%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 700px; height: 146px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+
+      <h2 class="components-heading">Badge on Icons</h2>
+
+
+      <div class="badge-div">
+        <img class="badge-icons" src="Images/icons8_shopping_cart_50px_1.png" />
+        <span class="badge-on-icon">4</span>
+      </div>
+      <iframe class="iframes"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2509%2509%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-icon%2520src%253D%2522Images%252Ficons8_shopping_cart_50px_1.png%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-on-icon%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="width: 700px; height: 182px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+
+
+      <h2 class="components-heading">Badge on Avatars</h2>
+      <div>
+        <div class="badge-div">
+          <img class="badge-icons" src="Images/profile-photo.jpg" />
+          <span class="online-badge-on-icon">o</span>
+        </div>
+
+        <iframe class="iframes"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2509%2509%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-icons%2522%2520src%253D%2522Images%252Fprofile-photo.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522online-badge-on-icon%2522%253Eo%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+          style="width: 700px; height: 182px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h2 class="components-heading">Buttons</h2>
+      <div>
+        <button class="btn primary-button">Primary Button</button>
+        <button class="btn seconday-button">Secondary Button</button>
+      </div>
+
+      <iframe class="iframes"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-button%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520seconday-button%2522%253ESecondary%2520Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 710px; height: 146px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <h2 class="components-heading">Floating Button</h2>
+     
+      <div>
+        <div class="floating-div">
+          <button class="floating-button">+</button>
+        </div>
+
+        <iframe class="iframes"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2509%2509%253Cdiv%2520class%253D%2522floating-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522floating-button%2522%253E%252B%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 710px; height: 128px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h2 class="components-heading">Cards</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img class="card-image" src="https://picsum.photos/id/237/536/354">
+          <div class="card-content">
+            <h3>Card Title</h3>
+            <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat
+              placeat
+              voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+              exercitationem neque quasi quisquam asperiores dignissimos?</p>
+            <button class="btn card-button">Go Somewhere</button>
+          </div>
+
+        </div>
+        <div class="card">
+          <img class="card-image" src="https://picsum.photos/id/237/536/354">
+          <div class="card-content">
+            <h3>Card Title</h3>
+            <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat
+              placeat
+              voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+              exercitationem neque quasi quisquam asperiores dignissimos?</p>
+            <button class="btn card-button">Go Somewhere</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-image" src="https://picsum.photos/id/237/536/354">
+          <div class="card-content">
+            <h3>Card Title</h3>
+            <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat
+              placeat
+              voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+              exercitationem neque quasi quisquam asperiores dignissimos?</p>
+            <button class="btn card-button">Go Somewhere</button>
+          </div>
+        </div>
+      </div>
+
+      <iframe class="iframes"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2509%2520%2520%2520%253Cdiv%2520class%253D%2522cards%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F536%252F354%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253ECard%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-data%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Aliquam%252C%2520autem%2520repellat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520soluta%2520adipisci%2520maiores%2520aspernatur%252C%2520rerum%252C%2520ducimus%2520quibusdam%2520veritatis%21%2520Placeat%2520ratione%252C%2520fuga%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520exercitationem%2520neque%2520quasi%2520quisquam%2520asperiores%2520dignissimos%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520card-button%2522%253EGo%2520Somewhere%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F536%252F354%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253ECard%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-data%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Aliquam%252C%2520autem%2520repellat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520soluta%2520adipisci%2520maiores%2520aspernatur%252C%2520rerum%252C%2520ducimus%2520quibusdam%2520veritatis%21%2520Placeat%2520ratione%252C%2520fuga%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520exercitationem%2520neque%2520quasi%2520quisquam%2520asperiores%2520dignissimos%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520card-button%2522%253EGo%2520Somewhere%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F536%252F354%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253ECard%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-data%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Aliquam%252C%2520autem%2520repellat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520soluta%2520adipisci%2520maiores%2520aspernatur%252C%2520rerum%252C%2520ducimus%2520quibusdam%2520veritatis%21%2520Placeat%2520ratione%252C%2520fuga%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520exercitationem%2520neque%2520quasi%2520quisquam%2520asperiores%2520dignissimos%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520card-button%2522%253EGo%2520Somewhere%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 710px; height: 203px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <h2 class="components-heading">Cards with dismiss</h2>
+
+      <div class="cards">
+        <div class="card">
+          <button class="card-dismiss-btn">x</button>
+          <img class="card-image" src="https://picsum.photos/id/237/536/354">
+          <div>
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat
+              placeat
+              voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+              exercitationem neque quasi quisquam asperiores dignissimos?</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <button class="card-dismiss-btn">x</button>
+          <img class="card-image" src="https://picsum.photos/id/237/536/354">
+          <div>
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat
+              placeat
+              voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+              exercitationem neque quasi quisquam asperiores dignissimos?</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <button class="card-dismiss-btn">x</button>
+          <img class="card-image" src="https://picsum.photos/id/237/536/354">
+          <div>
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, autem repellat
+              placeat
+              voluptates soluta adipisci maiores aspernatur, rerum, ducimus quibusdam veritatis! Placeat ratione, fuga
+              exercitationem neque quasi quisquam asperiores dignissimos?</p>
+          </div>
+        </div>
+
+      </div>
+
+      <iframe class="iframes"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522cards%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss-btn%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F536%252F354%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-data%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Aliquam%252C%2520autem%2520repellat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520soluta%2520adipisci%2520maiores%2520aspernatur%252C%2520rerum%252C%2520ducimus%2520quibusdam%2520veritatis%21%2520Placeat%2520ratione%252C%2520fuga%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520exercitationem%2520neque%2520quasi%2520quisquam%2520asperiores%2520dignissimos%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss-btn%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F536%252F354%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-data%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Aliquam%252C%2520autem%2520repellat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520soluta%2520adipisci%2520maiores%2520aspernatur%252C%2520rerum%252C%2520ducimus%2520quibusdam%2520veritatis%21%2520Placeat%2520ratione%252C%2520fuga%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520exercitationem%2520neque%2520quasi%2520quisquam%2520asperiores%2520dignissimos%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss-btn%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F536%252F354%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-data%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Aliquam%252C%2520autem%2520repellat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeat%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520soluta%2520adipisci%2520maiores%2520aspernatur%252C%2520rerum%252C%2520ducimus%2520quibusdam%2520veritatis%21%2520Placeat%2520ratione%252C%2520fuga%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520exercitationem%2520neque%2520quasi%2520quisquam%2520asperiores%2520dignissimos%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 710px; height: 210px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      <h2 class="components-heading">Cards with text overlay</h2>
+
+      <div style="margin-left: 1rem;">
+        <div class="text-overlay-card">
+          <img class="text-overlay-image" src="https://picsum.photos/id/237/536/354">
+          <p class="text-overlay-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <iframe class="iframes"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522text-overlay-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522text-overlay-image%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F536%252F354%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-overlay-data%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 710px; height: 142px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+
+
+      <h2 class="components-heading">Horizontal Card</h2>
+      <div style="margin-left: 1rem;">
         <div class="horizontal-card">
           <img class="horizontal-card-image"
             src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q">
@@ -208,38 +299,65 @@
             </h2>
             <div>
               <button class="horizontal-card-btn">
-                <a style="text-decoration:none; color:white" href="linkedin.com/in/sagar-dhamani-a8b066114"><small
-                    style="font-size:1.3vw">LinkedIn</small></a></button>
+                <small>LinkedIn</small></a></button>
             </div>
           </div>
-      
-      
         </div>
-        <h2>Images</h2>
+
+
+
+      </div>
+
+      <iframe class="iframes"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522horizontal-card-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fmedia-exp1.licdn.com%252Fdms%252Fimage%252FC5103AQECFC3z2zpUDA%252Fprofile-displayphoto-%2509%2509%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shrink_200_200%252F0%252F1567565758065%253Fe%253D1620864000%2526v%253Dbeta%2526t%253DIqKX71cxqMAx4Dho1l-%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520E2SWsduT8WNooD384sCXHm8Q%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-data%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522horizontal-card-heading%2522%253ESagar%2520Dhamani%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253ESagar%2520Dhamani%2520is%2520a%2520web%2520developer%2520at%2520Infosys%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522horizontal-card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253ELinkedIn%253C%252Fsmall%253E%253C%252Fa%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 710px; height: 210px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <h2 class="components-heading">Images</h2>
+      <div>
+        <h2 class="components-heading">Responsive Image</h2>
         <div>
-          <h2>Responsive Image</h2>
-          <div>
-            <img class="responsive-img"
-              src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
-          </div>
-          <h2>Round Responsive Image</h2>
-          <div>
-            <img class="round-responsive-img"
-              src="https://media-exp1.licdn.com/dms/image/C5103AQECFC3z2zpUDA/profile-displayphoto-shrink_200_200/0/1567565758065?e=1620864000&v=beta&t=IqKX71cxqMAx4Dho1l-E2SWsduT8WNooD384sCXHm8Q" />
-          </div>
+          <img class="responsive-img" src="Images/profile-photo.jpg" />
         </div>
-        <h2>Inputs</h2>
+        <iframe class="iframes"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522Images%252Fprofile-photo.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 710px; height: 125px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <h2 class="components-heading">Round Responsive Image</h2>
         <div>
-          <div class="input-outer-div">
-            <input class="input-div" placeholder="Enter Email Id" type="email" required > 
-          </div>
-          <div class="input-outer-div">
-            <input class="input-div" placeholder="Enter Password" type="password" required>
-          </div>
+          <img class="round-responsive-img" src="Images/profile-photo.jpg" />
         </div>
-        <h2>List</h2>
+        <iframe class="iframes"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522round-responsive-img%2522%2520src%253D%2522Images%252Fprofile-photo.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 710px; height: 125px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h2 class="components-heading">Inputs with validation</h2>
+      <div>
+        <div class="input-outer-div">
+          <input class="input-div" placeholder="Enter Email Id" type="email" required>
+        </div>
+        <div class="input-outer-div">
+          <input class="input-div" placeholder="Enter Password" type="password" required>
         </div>
       </div>
-      </div>
-  </body>
+
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-outer-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-div%2522%2520placeholder%253D%2522Enter%2520Email%2520Id%2522%2520type%253D%2522email%2522%2520required%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-outer-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-div%2522%2520placeholder%253D%2522Enter%2520Password%2522%2520type%253D%2522password%2522%2520required%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 710px; height: 210px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+    </div>
+  </div>
+  </div>
+  <div>
+    <button class="floating-button-lib" id="floating-button-lib">^</button>
+  </div>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
 </html>
