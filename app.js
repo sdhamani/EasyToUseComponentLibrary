@@ -37,7 +37,7 @@ btnScrollInstallation.addEventListener("click", function () {
 
 btnScrollAvatar.addEventListener("click", function () {
   window.scroll({
-    top: 370,
+    top: 420,
     left: 0,
     behavior: "smooth",
   });
@@ -45,7 +45,7 @@ btnScrollAvatar.addEventListener("click", function () {
 
 btnScrollAlerts.addEventListener("click", function () {
   window.scroll({
-    top: 800,
+    top: 830,
     left: 0,
     behavior: "smooth",
   });
@@ -53,7 +53,7 @@ btnScrollAlerts.addEventListener("click", function () {
 
 btnScrollBadges.addEventListener("click", function () {
   window.scroll({
-    top: 1480,
+    top: 1440,
     left: 0,
     behavior: "smooth",
   });
@@ -61,7 +61,7 @@ btnScrollBadges.addEventListener("click", function () {
 
 btnScrollButtons.addEventListener("click", function () {
   window.scroll({
-    top: 2630,
+    top: 2600,
     left: 0,
     behavior: "smooth",
   });
@@ -69,7 +69,7 @@ btnScrollButtons.addEventListener("click", function () {
 
 btnScrollcards.addEventListener("click", function () {
   window.scroll({
-    top: 3400,
+    top: 3350,
     left: 0,
     behavior: "smooth",
   });
@@ -77,7 +77,7 @@ btnScrollcards.addEventListener("click", function () {
 
 btnScrollImages.addEventListener("click", function () {
   window.scroll({
-    top: 7100,
+    top: 6150,
     left: 0,
     behavior: "smooth",
   });
@@ -85,7 +85,7 @@ btnScrollImages.addEventListener("click", function () {
 
 btnScrollInputs.addEventListener("click", function () {
   window.scroll({
-    top: 8800,
+    top: 9200,
     left: 0,
     behavior: "smooth",
   });
