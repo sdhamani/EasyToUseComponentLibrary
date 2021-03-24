@@ -690,6 +690,12 @@ input:focus:invalid {
   .footer-components .link {
     font-size: xx-small;
   }
+  .footer .link {
+    font-size: xx-small;
+  }
+  .footer .list-no-bullets {
+    margin: 0px;
+  }
   .iframes {
     width: 100%;
     font-size: 0;
@@ -701,7 +707,7 @@ input:focus:invalid {
     font-size: x-small;
   }
   .horizontal-card-btn {
-    padding: 0.11rem;
+    padding: 0.2rem 0.3rem;
   }
   .text-overlay-card {
     width: 60%;
