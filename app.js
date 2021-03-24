@@ -19,6 +19,9 @@ var btnScrollImages = document.querySelector("#images");
 var btnScrollInputs = document.querySelector("#inputs");
 4;
 
+var btnMenuMobileView = document.querySelector("#menu");
+4;
+
 // var frame = document.getElementById("myFrame");
 
 // // frame.onload = function () {
@@ -38,6 +41,9 @@ btnTScrollUp.addEventListener("click", function () {
 });
 
 btnScrollInstallation.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 0,
     left: 0,
@@ -46,6 +52,9 @@ btnScrollInstallation.addEventListener("click", function () {
 });
 
 btnScrollAvatar.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 420,
     left: 0,
@@ -54,6 +63,9 @@ btnScrollAvatar.addEventListener("click", function () {
 });
 
 btnScrollAlerts.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 830,
     left: 0,
@@ -62,6 +74,9 @@ btnScrollAlerts.addEventListener("click", function () {
 });
 
 btnScrollBadges.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 1440,
     left: 0,
@@ -70,6 +85,9 @@ btnScrollBadges.addEventListener("click", function () {
 });
 
 btnScrollButtons.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 2600,
     left: 0,
@@ -78,6 +96,9 @@ btnScrollButtons.addEventListener("click", function () {
 });
 
 btnScrollcards.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 3350,
     left: 0,
@@ -86,6 +107,9 @@ btnScrollcards.addEventListener("click", function () {
 });
 
 btnScrollImages.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 6150,
     left: 0,
@@ -94,9 +118,31 @@ btnScrollImages.addEventListener("click", function () {
 });
 
 btnScrollInputs.addEventListener("click", function () {
+  var menuitem = document.getElementById("menu");
+  menuitem.style.display = "none";
+  myFunctiontoggle();
   window.scroll({
     top: 9200,
     left: 0,
     behavior: "smooth",
   });
 });
+
+var hamflag = false;
+
+function myFunction(x) {
+  console.log("ham", hamflag);
+  var menuitem = document.getElementById("menu");
+  if (hamflag === false) {
+    menuitem.style.display = "block";
+  } else {
+    console.log("inelse");
+    menuitem.style.display = "none";
+  }
+  hamflag = !hamflag;
+  x.classList.toggle("change");
+}
+
+function myFunctiontoggle() {
+  document.getElementById("ham-container").classList.toggle("change");
+}

@@ -27,10 +27,40 @@ body {
 
 .menu-heading {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 1000;
   padding: 0.1rem 0.1rem;
 }
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 1rem;
+  top: 1.3rem;
+  display: none;
+}
 
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--button-text-color);
+  margin: 6px 0;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -60,7 +90,7 @@ body {
   padding: 10px 5px;
   margin: 5px 15px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 500;
   font-size: large;
 }
 
@@ -632,9 +662,14 @@ input:focus:invalid {
 
 @media screen and (max-width: 767px) {
   .menu {
+    width: 100%;
     display: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    z-index: 1;
+    padding: 2rem;
+    padding-top: 2rem;
   }
   .content {
     margin: 0;
@@ -749,5 +784,9 @@ input:focus:invalid {
   }
   .avatar-l {
     width: 8%;
+  }
+
+  .container {
+    display: inline-block;
   }
 }
