@@ -19,15 +19,15 @@ var btnScrollImages = document.querySelector("#images");
 var btnScrollInputs = document.querySelector("#inputs");
 4;
 
-var frame = document.getElementById("myFrame");
+// var frame = document.getElementById("myFrame");
 
-// frame.onload = function () {
-//   console.log("iniframe");
-//   var body = frame.contentWindow.document.querySelector("body");
-//   body.style.color = "red";
-//   body.style.fontSize = "20px";
-//   body.style.lineHeight = "20px";
-// };
+// // frame.onload = function () {
+// //   console.log("iniframe");
+// //   var body = frame.contentWindow.document.querySelector("body");
+// //   body.style.color = "red";
+// //   body.style.fontSize = "20px";
+// //   body.style.lineHeight = "20px";
+// // };
 
 btnTScrollUp.addEventListener("click", function () {
   window.scroll({

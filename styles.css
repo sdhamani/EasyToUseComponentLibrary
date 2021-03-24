@@ -491,7 +491,7 @@ Alerts  */
   color: var(--button-text-color);
   width: 20%;
   height: 6%;
-  font-size: 1rem;
+  font-size: 50%;
 }
 
 .horizontal-card-heading {
