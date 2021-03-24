@@ -470,7 +470,7 @@ Alerts  */
   bottom: 0.5%;
   color: white;
   background-color: var(--primary-color);
-  font-size: 20%;
+  font-size: medium;
   width: 100%;
 }
 
@@ -676,15 +676,19 @@ input:focus:invalid {
   .btn-getting-started {
     margin: 0;
   }
-  .footer {
-    font-size: 10%;
+  .footer-components .footer-header {
+    font-size: 80%;
   }
   .footer-text {
+    font-size: xx-small;
     padding: 0;
     margin: 0.1rem;
   }
   .footer-components {
     padding: 0.6rem;
+  }
+  .footer-components .link {
+    font-size: xx-small;
   }
   .iframes {
     width: 100%;
@@ -693,8 +697,30 @@ input:focus:invalid {
   .horizontal-card {
     width: 70%;
   }
+  .horizontal-data {
+    font-size: x-small;
+  }
+  .horizontal-card-btn {
+    padding: 0.11rem;
+  }
+  .text-overlay-card {
+    width: 60%;
+  }
+
+  .text-overlay-data {
+    font-size: small;
+  }
 
   .input-outer-div {
     width: 90%;
+  }
+  .avatar-xxl {
+    width: 12%;
+  }
+  .avatar-xl {
+    width: 10%;
+  }
+  .avatar-l {
+    width: 8%;
   }
 }
