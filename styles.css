@@ -478,14 +478,14 @@ Alerts  */
 
 .horizontal-card {
   display: flex;
-  width: 40%;
+  width: 35%;
   background-color: var(--button-text-color);
   box-shadow: 0 0 0 4px hsla(0, 0%, 80%), 0 0 0 6px hsla(0, 0%, 75%);
   border-radius: 0.2%;
-  font-size: 30%;
 }
 
 .horizontal-card-btn {
+  outline: none;
   text-decoration: none;
   background: var(--primary-color);
   color: var(--button-text-color);
@@ -503,8 +503,8 @@ Alerts  */
 .horizontal-data {
   padding-top: 3%;
   text-align: center;
-  margin: 2px 2px;
-  font-size: 0.8rem;
+  margin: auto;
+  font-size: 1rem;
 }
 
 .horizontal-card-image {
@@ -679,6 +679,10 @@ input:focus:invalid {
   .footer-components .footer-header {
     font-size: 80%;
   }
+
+  .footer .footer-header {
+    font-size: 60%;
+  }
   .footer-text {
     font-size: xx-small;
     padding: 0;
@@ -691,23 +695,30 @@ input:focus:invalid {
     font-size: xx-small;
   }
   .footer .link {
+    padding: 0px;
     font-size: xx-small;
   }
   .footer .list-no-bullets {
     margin: 0px;
+    padding: 0ppx;
+  }
+
+  .footer .list-no-bullets {
+    margin: 0px;
+    padding: 0ppx;
   }
   .iframes {
     width: 100%;
     font-size: 0;
   }
   .horizontal-card {
-    width: 70%;
+    width: 80%;
   }
   .horizontal-data {
-    font-size: x-small;
+    font-size: xx-small;
   }
   .horizontal-card-btn {
-    padding: 0.2rem 0.3rem;
+    padding: 0.25rem;
   }
   .text-overlay-card {
     width: 60%;
