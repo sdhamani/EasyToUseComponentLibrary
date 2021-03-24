@@ -482,7 +482,7 @@ Alerts  */
   background-color: var(--button-text-color);
   box-shadow: 0 0 0 4px hsla(0, 0%, 80%), 0 0 0 6px hsla(0, 0%, 75%);
   border-radius: 0.2%;
-  font-size: 1.5vw;
+  font-size: 30%;
 }
 
 .horizontal-card-btn {
@@ -492,6 +492,7 @@ Alerts  */
   width: 20%;
   height: 6%;
   font-size: 50%;
+  text-align: center;
 }
 
 .horizontal-card-heading {
@@ -502,7 +503,8 @@ Alerts  */
 .horizontal-data {
   padding-top: 3%;
   text-align: center;
-  margin: auto;
+  margin: 2px 2px;
+  font-size: 0.8rem;
 }
 
 .horizontal-card-image {
@@ -615,11 +617,17 @@ input:focus:invalid {
 
 .footer-components .footer-header {
   font-weight: bold;
-  font-size: large;
+  font-size: 1rem;
 }
 
-.footer-components .ul {
-  padding-inline-start: 50px;
+.footer-components ul {
+  padding-inline-start: 0px;
+}
+.footer-text {
+  margin: 0.5rem;
+}
+.footer-components .list-no-bullets {
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -669,11 +677,24 @@ input:focus:invalid {
     margin: 0;
   }
   .footer {
-    font-size: 60%;
+    font-size: 10%;
+  }
+  .footer-text {
+    padding: 0;
+    margin: 0.1rem;
+  }
+  .footer-components {
+    padding: 0.6rem;
   }
   .iframes {
     width: 100%;
-    height: 800px;
     font-size: 0;
+  }
+  .horizontal-card {
+    width: 70%;
+  }
+
+  .input-outer-div {
+    width: 90%;
   }
 }
