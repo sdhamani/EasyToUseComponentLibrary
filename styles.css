@@ -677,7 +677,7 @@ input:focus:invalid {
     margin: 0;
   }
   .footer-components .footer-header {
-    font-size: 80%;
+    font-size: 60%;
   }
 
   .footer .footer-header {
@@ -700,12 +700,22 @@ input:focus:invalid {
   }
   .footer .list-no-bullets {
     margin: 0px;
-    padding: 0ppx;
+    padding: 0px;
   }
 
   .footer .list-no-bullets {
     margin: 0px;
-    padding: 0ppx;
+    padding: 0px;
+  }
+
+  .footer-components .list-no-bullets {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .footer-components .list-no-bullets {
+    margin: 0px;
+    padding: 0px;
   }
   .iframes {
     width: 100%;
