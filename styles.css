@@ -595,15 +595,13 @@ input:focus:invalid {
 }
 
 .footer .footer-header {
+  padding-top: 5px;
   font-weight: bold;
-  font-size: large;
+  font-size: 90%;
 }
 
-.right-padding {
-  padding-right: 2rem;
-}
-.footer .ul {
-  padding-inline-start: 50px;
+.footer ul {
+  padding-inline-start: 0px;
 }
 
 .footer-components {
