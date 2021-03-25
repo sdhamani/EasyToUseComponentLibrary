@@ -659,10 +659,15 @@ input:focus:invalid {
 .footer-components .list-no-bullets {
   margin: 0;
 }
-
+.mobile-view {
+  display: none;
+}
 @media screen and (max-width: 767px) {
+  .mobile-view {
+    display: block;
+  }
   .menu {
-    width: 100%;
+    width: 99%;
     display: none;
     margin: auto;
     background-color: var(--primary-color);
@@ -670,6 +675,8 @@ input:focus:invalid {
     z-index: 1;
     padding: 2rem;
     padding-top: 2rem;
+    position: fixed;
+    top: 80px;
   }
   .content {
     margin: 0;

@@ -22,15 +22,27 @@ var btnScrollInputs = document.querySelector("#inputs");
 var btnMenuMobileView = document.querySelector("#menu");
 4;
 
-// var frame = document.getElementById("myFrame");
+var btnScrollInstallation1 = document.querySelector("#menu-installation");
+4;
+var btnScrollAvatar1 = document.querySelector("#menu-avatars");
+4;
 
-// // frame.onload = function () {
-// //   console.log("iniframe");
-// //   var body = frame.contentWindow.document.querySelector("body");
-// //   body.style.color = "red";
-// //   body.style.fontSize = "20px";
-// //   body.style.lineHeight = "20px";
-// // };
+var btnScrollAlerts1 = document.querySelector("#menu-alerts");
+4;
+var btnScrollBadges1 = document.querySelector("#menu-badges");
+4;
+var btnScrollButtons1 = document.querySelector("#menu-buttons");
+4;
+var btnScrollcards1 = document.querySelector("#menu-cards");
+4;
+var btnScrollImages1 = document.querySelector("#menu-images");
+4;
+
+var btnScrollInputs1 = document.querySelector("#menu-inputs");
+4;
+
+var btnMenuMobileView1 = document.querySelector("#menu");
+4;
 
 btnTScrollUp.addEventListener("click", function () {
   window.scroll({
@@ -52,11 +64,12 @@ btnScrollInstallation.addEventListener("click", function () {
 });
 
 btnScrollAvatar.addEventListener("click", function () {
+  console.log("Inavatars");
   var menuitem = document.getElementById("menu");
   menuitem.style.display = "none";
   myFunctiontoggle();
   window.scroll({
-    top: 420,
+    top: 490,
     left: 0,
     behavior: "smooth",
   });
@@ -67,18 +80,19 @@ btnScrollAlerts.addEventListener("click", function () {
   menuitem.style.display = "none";
   myFunctiontoggle();
   window.scroll({
-    top: 830,
+    top: 880,
     left: 0,
     behavior: "smooth",
   });
 });
 
 btnScrollBadges.addEventListener("click", function () {
+  console.log("badge");
   var menuitem = document.getElementById("menu");
   menuitem.style.display = "none";
   myFunctiontoggle();
   window.scroll({
-    top: 1440,
+    top: 1500,
     left: 0,
     behavior: "smooth",
   });
@@ -96,6 +110,7 @@ btnScrollButtons.addEventListener("click", function () {
 });
 
 btnScrollcards.addEventListener("click", function () {
+  console.log("cards");
   var menuitem = document.getElementById("menu");
   menuitem.style.display = "none";
   myFunctiontoggle();
@@ -111,7 +126,7 @@ btnScrollImages.addEventListener("click", function () {
   menuitem.style.display = "none";
   myFunctiontoggle();
   window.scroll({
-    top: 6150,
+    top: 4950,
     left: 0,
     behavior: "smooth",
   });
@@ -123,6 +138,70 @@ btnScrollInputs.addEventListener("click", function () {
   myFunctiontoggle();
   window.scroll({
     top: 9200,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollInstallation1.addEventListener("click", function () {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollAvatar1.addEventListener("click", function () {
+  window.scroll({
+    top: 420,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollAlerts1.addEventListener("click", function () {
+  window.scroll({
+    top: 830,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollBadges1.addEventListener("click", function () {
+  window.scroll({
+    top: 1440,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollButtons1.addEventListener("click", function () {
+  window.scroll({
+    top: 2600,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollcards1.addEventListener("click", function () {
+  window.scroll({
+    top: 3350,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollImages1.addEventListener("click", function () {
+  window.scroll({
+    top: 5900,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+btnScrollInputs1.addEventListener("click", function () {
+  window.scroll({
+    top: 7100,
     left: 0,
     behavior: "smooth",
   });
@@ -145,4 +224,5 @@ function myFunction(x) {
 
 function myFunctiontoggle() {
   document.getElementById("ham-container").classList.toggle("change");
+  hamflag = !hamflag;
 }
