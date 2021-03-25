@@ -126,7 +126,7 @@ btnScrollImages.addEventListener("click", function () {
   menuitem.style.display = "none";
   myFunctiontoggle();
   window.scroll({
-    top: 4950,
+    top: 7900,
     left: 0,
     behavior: "smooth",
   });
