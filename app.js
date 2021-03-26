@@ -1,25 +1,25 @@
-var btnTScrollUp = document.querySelector("#floating-button-lib");
+const btnTScrollUp = document.querySelector("#floating-button-lib");
 
-var btnScrollInstallation = document.querySelector("#installation");
+const btnScrollInstallation = document.querySelector("#installation");
 4;
-var btnScrollAvatar = document.querySelector("#avatars");
-4;
-
-var btnScrollAlerts = document.querySelector("#alerts");
-4;
-var btnScrollBadges = document.querySelector("#badges");
-4;
-var btnScrollButtons = document.querySelector("#buttons");
-4;
-var btnScrollcards = document.querySelector("#cards");
-4;
-var btnScrollImages = document.querySelector("#images");
+const btnScrollAvatar = document.querySelector("#avatars");
 4;
 
-var btnScrollInputs = document.querySelector("#inputs");
+const btnScrollAlerts = document.querySelector("#alerts");
+4;
+const btnScrollBadges = document.querySelector("#badges");
+4;
+const btnScrollButtons = document.querySelector("#buttons");
+4;
+const btnScrollcards = document.querySelector("#cards");
+4;
+const btnScrollImages = document.querySelector("#images");
 4;
 
-var btnMenuMobileView = document.querySelector("#menu");
+const btnScrollInputs = document.querySelector("#inputs");
+4;
+
+const btnMenuMobileView = document.querySelector("#menu");
 4;
 
 const screenWidth = screen.width;
@@ -34,7 +34,7 @@ btnTScrollUp.addEventListener("click", function () {
 
 btnScrollInstallation.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -47,7 +47,7 @@ btnScrollInstallation.addEventListener("click", function () {
 
 btnScrollAvatar.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -60,7 +60,7 @@ btnScrollAvatar.addEventListener("click", function () {
 
 btnScrollAlerts.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -73,7 +73,7 @@ btnScrollAlerts.addEventListener("click", function () {
 
 btnScrollBadges.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -86,7 +86,7 @@ btnScrollBadges.addEventListener("click", function () {
 
 btnScrollButtons.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -99,7 +99,7 @@ btnScrollButtons.addEventListener("click", function () {
 
 btnScrollcards.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -112,7 +112,7 @@ btnScrollcards.addEventListener("click", function () {
 
 btnScrollImages.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -125,7 +125,7 @@ btnScrollImages.addEventListener("click", function () {
 
 btnScrollInputs.addEventListener("click", function () {
   if (screenWidth < 767) {
-    var menuitem = document.getElementById("menu");
+    let menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
     myFunctiontoggle();
   }
@@ -136,11 +136,11 @@ btnScrollInputs.addEventListener("click", function () {
   });
 });
 
-var hamflag = false;
+let hamflag = false;
 
 function myFunction(x) {
   console.log("ham", hamflag);
-  var menuitem = document.getElementById("menu");
+  let menuitem = document.getElementById("menu");
   if (hamflag === false) {
     menuitem.style.display = "block";
   } else {
