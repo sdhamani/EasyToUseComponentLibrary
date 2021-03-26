@@ -268,22 +268,22 @@ body {
 }
 
 .alert-error {
-  padding: 1%;
+  padding: 0.8rem;
   background-color: rgb(254, 215, 215);
 }
 
 .alert-success {
-  padding: 1%;
+  padding: 0.8rem;
   background-color: #c6f6d5;
 }
 
 .alert-warning {
-  padding: 1%;
+  padding: 0.8rem;
   background-color: #feebc8;
 }
 
 .alert-info {
-  padding: 1%;
+  padding: 0.8rem;
   background-color: #bee3f8;
 }
 
@@ -680,7 +680,7 @@ input:focus:invalid {
 
   .alert {
     width: 100%;
-    padding-left: 0;
+    padding: 12px;
   }
 
   .main-content {
