@@ -122,6 +122,7 @@ btnScrollcards.addEventListener("click", function () {
 });
 
 btnScrollImages.addEventListener("click", function () {
+  console.;
   var menuitem = document.getElementById("menu");
   menuitem.style.display = "none";
   myFunctiontoggle();
