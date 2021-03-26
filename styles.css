@@ -96,6 +96,18 @@ body {
   padding-left: 1rem;
 }
 
+/* .menu-list-item:focus {
+  background: red;
+} */
+
+.focus-btn:focus {
+  color: rgb(231, 1, 1);
+}
+
+.focus-btn:active {
+  color: rgb(231, 1, 1);
+}
+
 /* Navigation Bar */
 
 .navigation {
@@ -129,10 +141,10 @@ body {
   font-weight: d;
 }
 
-/* .list-no-bullets {
+.list-no-bullets {
   list-style: none;
   padding-inline-start: 0px;
-} */
+}
 
 .list-item-inline {
   display: inline;
@@ -150,12 +162,18 @@ body {
 
 /* Main-content */
 
+.outer-div {
+  width: 100%;
+  height: 77.9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-content {
-  margin: auto;
+  margin: auto auto;
   width: 60%;
-  position: absolute;
-  top: 30%;
-  left: 20%;
+  height: 60vh;
   display: flex;
   color: var(--primary-color);
 }
@@ -594,13 +612,20 @@ input:focus:invalid {
   text-align: center;
   color: var(--button-text-color);
   border-top-left-radius: 1rem;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
 .footer .link {
   color: var(--button-text-color);
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .footer .footer-header {
@@ -613,38 +638,18 @@ input:focus:invalid {
   padding-inline-start: 0px;
 }
 
-.footer-components {
-  background-color: var(--primary-color);
-  padding: 1rem 1rem;
-  text-align: center;
-  color: var(--button-text-color);
-  border-top-left-radius: 1rem;
-  width: 100%;
-}
-
-.footer-components .link {
-  color: var(--button-text-color);
-}
-
-.footer-components .footer-header {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.footer-components ul {
-  padding-inline-start: 0px;
-}
-
 .footer-text {
-  margin: 0.5rem;
-}
-
-.footer-components .list-no-bullets {
-  margin: 0;
+  font-size: small;
+  padding: 0.1rem;
+  margin: 0.1rem;
 }
 
 /* mediaqueries */
 @media screen and (max-width: 767px) {
+  .outer-div {
+    width: 100%;
+    height: 78.8vh;
+  }
   .menu {
     width: 99%;
     display: none;
@@ -707,10 +712,6 @@ input:focus:invalid {
     margin: 0;
   }
 
-  .footer-components .footer-header {
-    font-size: 60%;
-  }
-
   .footer .footer-header {
     font-size: 60%;
   }
@@ -721,37 +722,25 @@ input:focus:invalid {
     margin: 0.1rem;
   }
 
-  .footer-components {
-    padding: 0.6rem;
-  }
-
-  .footer-components .link {
-    font-size: xx-small;
-  }
-
   .footer .link {
-    padding: 0px;
+    padding-bottom: 0.2rem;
+    margin: 0;
     font-size: xx-small;
   }
 
   .footer .list-no-bullets {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.4rem;
+  }
+  .footer ul {
+    margin: 0;
+    padding: 0;
   }
 
-  .footer .list-no-bullets {
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .footer-components .list-no-bullets {
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .footer-components .list-no-bullets {
-    margin: 0px;
-    padding: 0px;
+  .footer li {
+    margin: 0;
+    padding: 0;
   }
 
   .iframes {
