@@ -89,6 +89,7 @@ body {
   text-align: left;
   font-weight: 500;
   font-size: large;
+  cursor: pointer;
 }
 
 .menu-list-item:hover {
@@ -341,6 +342,7 @@ body {
 
 /* button */
 .btn {
+  border: none;
   cursor: pointer;
   padding: 0.7%;
   background-color: var(--primary-color);
@@ -356,10 +358,7 @@ body {
 }
 
 .primary-button {
-  cursor: pointer;
   padding: 0.7%;
-  background-color: var(--primary-color);
-  color: var(--button-text-color);
   border-radius: 8%;
   font-weight: 600;
 }
@@ -374,7 +373,7 @@ body {
 
 .floating-button {
   border-style: solid;
-  outline: 0;
+  outline: none;
   width: 3rem;
   height: 3rem;
   cursor: pointer;
@@ -442,7 +441,7 @@ body {
 
 .card-dismiss-btn {
   border-style: none;
-  outline: 0;
+  outline: none;
   cursor: pointer;
   border-radius: 100%;
   position: absolute;
@@ -496,6 +495,7 @@ body {
 }
 
 .horizontal-card-btn {
+  border: none;
   outline: none;
   text-decoration: none;
   background: var(--primary-color);

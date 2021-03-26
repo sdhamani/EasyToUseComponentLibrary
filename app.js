@@ -32,7 +32,7 @@ btnTScrollUp.addEventListener("click", function () {
   });
 });
 
-btnScrollInstallation.addEventListener("click", function () 
+btnScrollInstallation.addEventListener("click", function () {
   if (screenWidth < 767) {
     var menuitem = document.getElementById("menu");
     menuitem.style.display = "none";
