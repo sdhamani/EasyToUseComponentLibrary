@@ -25,6 +25,7 @@ body {
   font-weight: 1000;
   padding: 0.1rem 0.1rem;
 }
+
 .container {
   display: inline-block;
   cursor: pointer;
@@ -56,6 +57,7 @@ body {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -305,17 +307,19 @@ body {
 }
 
 .badge-on-icon {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: -39.7rem;
+  height: 1.2rem;
   border-radius: 50%;
   position: absolute;
   top: 0px;
   left: 3.5rem;
   background-color: var(--primary-color);
   color: var(--button-text-color);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
 }
 
 .online-badge-on-icon {
@@ -379,6 +383,7 @@ body {
   color: var(--primary-color);
   border: 2.5px solid var(--primary-color);
 }
+
 .floating-button-lib {
   bottom: 2rem;
   right: 2rem;
@@ -432,7 +437,6 @@ body {
 
 .card-image {
   width: 100%;
-  height: auto;
   margin: auto;
 }
 
@@ -630,9 +634,11 @@ input:focus:invalid {
 .footer-components ul {
   padding-inline-start: 0px;
 }
+
 .footer-text {
   margin: 0.5rem;
 }
+
 .footer-components .list-no-bullets {
   margin: 0;
 }
@@ -651,12 +657,15 @@ input:focus:invalid {
     position: fixed;
     top: 80px;
   }
+
   .content {
     margin: 0;
   }
+
   .vl {
     display: none;
   }
+
   .main-content {
     position: absolute;
     top: 15%;
@@ -664,6 +673,7 @@ input:focus:invalid {
     display: block;
     flex-direction: column;
   }
+
   .grid-container {
     display: block;
   }
@@ -672,25 +682,31 @@ input:focus:invalid {
     width: 100%;
     padding-left: 0;
   }
+
   .main-content {
     margin: auto;
   }
+
   .main-content-heading {
     font-size: 50%;
     letter-spacing: 0.01rem;
   }
+
   .main-content-para {
     font-size: 20%;
     margin: 0;
   }
+
   .main-logo {
     margin: auto;
     width: 80%;
     height: auto;
   }
+
   .btn-getting-started {
     margin: 0;
   }
+
   .footer-components .footer-header {
     font-size: 60%;
   }
@@ -698,21 +714,26 @@ input:focus:invalid {
   .footer .footer-header {
     font-size: 60%;
   }
+
   .footer-text {
     font-size: xx-small;
     padding: 0;
     margin: 0.1rem;
   }
+
   .footer-components {
     padding: 0.6rem;
   }
+
   .footer-components .link {
     font-size: xx-small;
   }
+
   .footer .link {
     padding: 0px;
     font-size: xx-small;
   }
+
   .footer .list-no-bullets {
     margin: 0px;
     padding: 0px;
@@ -732,20 +753,25 @@ input:focus:invalid {
     margin: 0px;
     padding: 0px;
   }
+
   .iframes {
     width: 100%;
     font-size: 0;
     height: 5rem;
   }
+
   .horizontal-card {
     width: 80%;
   }
+
   .horizontal-data {
     font-size: xx-small;
   }
+
   .horizontal-card-btn {
     padding: 0.25rem;
   }
+
   .text-overlay-card {
     width: 60%;
   }
@@ -757,12 +783,15 @@ input:focus:invalid {
   .input-outer-div {
     width: 90%;
   }
+
   .avatar-xxl {
     width: 12%;
   }
+
   .avatar-xl {
     width: 10%;
   }
+
   .avatar-l {
     width: 8%;
   }
