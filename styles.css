@@ -110,6 +110,10 @@ body {
 
 /* Navigation Bar */
 
+.nav-components {
+  width: 60%;
+}
+
 .navigation {
   grid-area: header;
   width: 100%;
@@ -713,6 +717,16 @@ input:focus:invalid {
     margin: 0;
   }
 
+  .navigation {
+    height: 2rem;
+    display: block;
+    padding: 0.2rem;
+    text-align: right;
+  }
+  .navigation .list-no-bullets {
+    font-size: x-small;
+    display: inline;
+  }
   .footer .footer-header {
     font-size: 60%;
   }
