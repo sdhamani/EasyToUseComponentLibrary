@@ -663,9 +663,9 @@ input:focus:invalid {
     color: var(--button-text-color);
     z-index: 1;
     padding: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     position: fixed;
-    top: 80px;
+    top: 3.98rem;
   }
 
   .content {
