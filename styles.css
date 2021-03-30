@@ -385,6 +385,10 @@ body {
   font-weight: 600;
 }
 
+.seconday-button {
+  background-color: var(--secondary-color);
+}
+
 .primary-button:hover {
   background-color: var(--secondary-color);
 }
