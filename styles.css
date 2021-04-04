@@ -339,13 +339,17 @@ body {
   height: 1.1rem;
   border-radius: 50%;
   position: absolute;
-  right: -1.5rem;
-  top: -1.3rem;
+  left: 140%;
+  top: -150%;
   background-color: var(--primary-color);
   color: var(--button-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.fa-shopping-cart {
+  color: var(--primary-color);
 }
 
 .online-badge-on-icon {
